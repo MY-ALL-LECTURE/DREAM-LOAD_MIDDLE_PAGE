@@ -30,9 +30,69 @@
            }
            </style>
 
-   
+       <!-- SWIPER CDN -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+       <style>
+        .wrapper>main>section.banner-section>.swiper{
+            border : 1px solid;
+            height:100%;
+        }
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper{
+     
+        }
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+           
+        }
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a{
+            width : 100%;
+            height : 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          
 
-           <link rel="stylesheet" href="css/common.css">
+        }
+
+
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
+            border : 1px solid;
+            object-fit: contain;
+            width : 40%;
+
+        }
+        .wrapper>main>section.banner-section .swiper-pagination-bullet{
+            width:10px;
+            height:10px;
+            background-color: gray;
+        }
+        .wrapper>main>section.banner-section .swiper-button-next::after,
+        .wrapper>main>section.banner-section .swiper-button-prev::after
+        {
+            content :'';
+        }
+
+        .wrapper>main>section.banner-section .material-symbols-outlined{
+            font-size : 7rem;
+            color : lightgray;
+            opacity: .6;
+        }
+        .wrapper>main>section.banner-section .material-symbols-outlined:hover{
+            opacity: 1;
+        }
+
+        .wrapper>main>section.banner-section .swiper-button-next{}
+        .wrapper>main>section.banner-section .swiper-button-prev{}
+    </style>
+
+        <link rel="stylesheet" href="css/common.css">
 
 
 </head>
@@ -99,9 +159,71 @@
 
 
             </aside>
-            <section>
+            <section class="banner-section">
+              <!-- Slider main container -->
+              <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <style>
+                        .swiper-wrapper .m_install::before{
+                          content:"mBlock 설치";
+                          font-size : 1.5rem;
+                          font-weight:900;
+                          display:block;
+                          
+                          position:absolute;
+                          left:0px;
+                          top:0px;
+                          padding-left : 20px;
+                          text-decoration: none;
+                        }
+                        .swiper-wrapper .m_link::before{
+                          content:"mLink 설치";
+                          font-size : 1.5rem;
+                          font-weight:900;
+                          display:block;
+                          
+                          position:absolute;
+                          left:0px;
+                          top:0px;
+                          padding-left : 20px;
+                          text-decoration: none;
+                        }                       
+                      </style>
+              
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_install" style="position:relative;"><img src="assets/05/02/1.png" alt="" style="width: 70%;"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_install" style="position:relative;"><img src="assets/05/02/2.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_install" style="position:relative;"><img src="assets/05/02/3.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_install" style="position:relative;"><img src="assets/05/02/4.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/5.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/6.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/7.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/8.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/9.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/10.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/11.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/12.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/13.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/14.png" alt="" style="width: 70%"> </a>   </div>
+                      <div class="swiper-slide">  <a href="javascript:void(0)" class="m_link" style="position:relative;"><img src="assets/05/02/15.png" alt="" style="width: 70%"> </a>   </div>
 
-            </section>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"> </div>
+              
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev">
+                      <span class="material-symbols-outlined">arrow_left</span>
+                  </div>
+                  <div class="swiper-button-next">
+                      <span class="material-symbols-outlined">arrow_right</span>
+                  </div>
+              
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+              </div>
+      </section>
         </main>
         <footer class="bg-dark">
 
@@ -109,6 +231,28 @@
         </footer>
     </div>
 
-    
+    <script>
+      const swiper_banner=new Swiper('.wrapper>main>section.banner-section>.swiper',{
+      
+        direction : 'horizontal',
+          autoplay : {
+              delay:10000,
+              pauseOnMouseEnter : true,
+          },
+          loop :true,
+          pagination : {
+              el : '.swiper-pagination',
+              clickable :'true',
+              type:'bullets', // bullets,progressbar,fraction..
+          },
+          navigation : {
+              nextEl : '.swiper-button-next',
+              prevEl : '.swiper-button-prev',
+          },
+          mousewheel : false,
+          effect : 'fade',  //fade
+      });
+
+  </script>
 </body>
 </html>
