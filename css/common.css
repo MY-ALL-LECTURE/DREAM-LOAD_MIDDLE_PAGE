@@ -161,7 +161,7 @@ footer .footer-top >ul{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top : 50px;
+    margin-top : 20px;
 }
 footer .footer-top >ul>li{
     width :200px;
