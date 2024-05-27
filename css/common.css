@@ -1,0 +1,88 @@
+:root{
+    font-size : 1.5rem;
+    font-weight:500;
+    
+}
+body{
+    font-family: 'NanumGeumEunBoHwa';
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+
+.layout{padding-left:50px; padding-right:50px;}
+.layout-half{padding-left:25px; padding-right:25px;}
+.path ol{
+margin : 0px;
+}
+
+.wrapper{}
+.wrapper>header{}
+
+.wrapper>header>.top-header{height:50px; display:flex;align-items: center;justify-content: start;}
+.wrapper>header>.top-header  img{    width : 200px;}
+.wrapper>header>nav{height : 100px;font-size : 1.5rem;}
+.wrapper>header>nav .material-symbols-outlined{
+    position:relative;
+    top:4px;
+}
+
+.wrapper>header>nav li{
+    text-align:left;
+}
+
+
+.wrapper>main{
+display:flex;
+justify-content: space-between;
+align-items: center;
+height : 80vh;
+margin-top : 10px;
+}
+
+.wrapper>main>aside{
+    width : 300px;
+    height : 100%;
+    border : 1px solid;
+    margin-right : 10px;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.wrapper>main>aside>ul{
+    width :200px;
+    /* border : 1px solid; */
+
+    list-style: none;
+    padding : 20px;
+}
+.wrapper>main>aside>ul>li{
+  
+    height : 35px;
+    line-height : 35px;
+    border  : 1px solid;
+    text-align:center;
+    margin : 5px;
+}
+.wrapper>main>aside>ul>li>a{
+    text-decoration: none;
+    color:gray;
+    display:block;
+}
+.wrapper>main>section{
+    width : 100%;
+    height : 100%;
+    border : 1px solid;
+
+    overflow : auto;
+}
+
+
+footer{
+    margin-top : 10px;
+    height : 250px;
+    border : 1px solid;
+}
