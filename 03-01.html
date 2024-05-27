@@ -61,18 +61,21 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
+              
 
             }
     
     
             .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
                 border : 1px solid;
+                object-fit: contain;
+                width : 40%;
 
             }
             .wrapper>main>section.banner-section .swiper-pagination-bullet{
                 width:10px;
                 height:10px;
-                background-color: green;
+                background-color: gray;
             }
             .wrapper>main>section.banner-section .swiper-button-next::after,
             .wrapper>main>section.banner-section .swiper-button-prev::after
@@ -162,11 +165,17 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03-01-01.png" alt=""> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/logo.png" alt=""> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03-01-03.png" alt=""> </a>   </div>
-                           
-
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/1.png" alt="" style="width: 70%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/2.png" alt="" style="width:70%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/3.png" alt=""style="width: 30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/4.png" alt=""style="width:30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/5.png" alt=""style="width:30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/6.png" alt=""style="width:30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/7.png" alt=""style="width:30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/8.png" alt=""style="width:30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/9.png" alt=""style="width:30%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/10.png" alt="" style="width:70%"> </a>   </div>
+                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/11.png" alt="" style="width:80%"> </a>   </div>
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"> </div>
@@ -196,7 +205,7 @@
       
         direction : 'horizontal',
           autoplay : {
-              delay:1000,
+              delay:10000,
               pauseOnMouseEnter : true,
           },
           loop :true,

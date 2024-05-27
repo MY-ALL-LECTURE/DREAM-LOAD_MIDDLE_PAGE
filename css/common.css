@@ -14,7 +14,12 @@ a{
   text-decoration: none;
   color:black;
 }
-
+li {
+    font-size :1rem;
+}
+nav li{
+    font-size : 1.5rem;
+}
 
 .layout{padding-left:50px; padding-right:50px;}
 .layout-half{padding-left:25px; padding-right:25px;}
