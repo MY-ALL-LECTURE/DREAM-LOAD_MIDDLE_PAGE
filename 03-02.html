@@ -158,11 +158,11 @@
                     <li>
                       <a href="03-02.html">스크래치 실습</a>
                       <ul class="submenu">
-                        <li><a href="">동작</a></li>
-                        <li><a href="">형태</a></li>
-                        <li><a href="">이벤트</a></li>
-                        <li><a href="">제어</a></li>
-                        <li><a href="">기타(YOUTUBE)</a></li>
+                        <li><a href="03-02.html">동작</a></li>
+                        <li><a href="03-02-02.html">형태</a></li>
+                        <li><a href="03-02-03.html">이벤트</a></li>
+                        <li><a href="03-02-04.html">제어</a></li>
+                        <li><a href="03-02-05.html">기타(YOUTUBE)</a></li>
                       </ul>
                     </li>
                     <li><a href="03-03.html">고양이 움직이기</a></li>
@@ -174,17 +174,59 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/1.png" alt="" style="width: 70%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/2.png" alt="" style="width:70%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/3.png" alt=""style="width: 30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/4.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/5.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/6.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/7.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/8.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/9.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/10.png" alt="" style="width:70%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/11.png" alt="" style="width:80%"> </a>   </div>
+                            <style>
+                              .swiper-slide a{
+                                position:relative;
+                                
+                              }
+                              .swiper-slide a::before{
+                                
+                                display:block;
+                                width : 200px;
+                                font-size : 1.5rem;
+                                position:absolute;
+                                left:15px;
+                                top:10px;
+                              }
+                              .m1::before{content: "[예제(1/6)] 동작"}
+                              .m2::before{content: "[예제(2/6)] 동작"}
+                              .m3::before{content: "[예제(3/6)] 동작"}
+                              .m4::before{content: "[예제(4/6)] 동작"}
+                              .m5::before{content: "[예제(5/6)] 동작"}
+                              .m6::before{content: "[예제(6/6)] 동작"}
+                              
+                            </style>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m1">
+                                <video src="assets/03/02/00/1.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m2">
+                                <video src="assets/03/02/00/2.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m3">
+                                <video src="assets/03/02/00/3.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m4">
+                                <video src="assets/03/02/00/4.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m5">
+                                <video src="assets/03/02/00/5.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>       
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m5">
+                                <video src="assets/03/02/00/6.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>                                                                                                            
+                          
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"> </div>
