@@ -174,29 +174,48 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">  
+                            <style>
+                              .swiper-slide a{
+                                position:relative;
+                                
+                              }
+                              .swiper-slide a::before{
+                                
+                                display:block;
+                                width : 200px;
+                                font-size : 1.5rem;
+                                position:absolute;
+                                left:15px;
+                                top:10px;
+                              }
+                              .m1::before{content: "[예제(1/4)] 형태"}
+                              .m2::before{content: "[예제(2/4)] 형태"}
+                              .m3::before{content: "[예제(3/4)] 형태"}
+                              .m4::before{content: "[예제(4/4)] 형태"}
 
-                              <style>
-                                .swiper-slide a{
-                                  position:relative;
-                                  
-                                }
-                                .swiper-slide a::before{
-                                  content : "[예제] 동작 1";
-                                  display:block;
-                                  width : 200px;
-                                  font-size : 2rem;
-                                  position:absolute;
-                                  left:15px;
-                                  top:10px;
-                                }
-                              </style>
-                              <a href="javascript:void(0)">
-                                <video src="assets/03/02/00/1.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              
+                            </style>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m1">
+                                <video src="assets/03/02/01/1.mp4" controls width="100%"height="100%" autoplay muted></video>  
                               </a>   
                             </div>
-                            
-                          
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m2">
+                                <video src="assets/03/02/01/2.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m3">
+                                <video src="assets/03/02/01/3.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+                            <div class="swiper-slide"> 
+                              <a href="javascript:void(0)" class="m4">
+                                <video src="assets/03/02/01/4.mp4" controls width="100%"height="100%" autoplay muted></video>  
+                              </a>   
+                            </div>
+               
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"> </div>
