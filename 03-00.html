@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DREAMLOAD</title>
     <link rel="icon" href="/assets/favicon.ico">
-
        <!-- RESET CDN -->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
 
@@ -62,10 +61,13 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
-              
-
+                flex-direction: column;
+                
+           
+            }     
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>p{
+              font-size :1.5rem;
             }
-    
     
             .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
                 border : 1px solid;
@@ -107,7 +109,7 @@
                     <img src="assets/logo.png">
                 </a>
                 <img src="assets/header-right.png" alt="">
-  
+
             </div>
             <nav class="navbar navbar-expand-lg navbar-light  bg-dark layout-half">
                 <div class="container-fluid ">
@@ -145,7 +147,7 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item"><a href="#">스크래치실습</a></li>
-              <li class="breadcrumb-item active" aria-current="page">스크래치 실습하기</li>
+              <li class="breadcrumb-item active" aria-current="page">스크래치란</li>
             </ol>
           </nav>
         </div>
@@ -157,13 +159,13 @@
                     <li><a href="03-01.html">스크래치 설치하기</a></li>
                     <li>
                       <a href="03-02.html">스크래치 실습</a>
-                      <ul class="submenu">
-                        <li><a href="">동작</a></li>
-                        <li><a href="">형태</a></li>
-                        <li><a href="">이벤트</a></li>
-                        <li><a href="">제어</a></li>
-                        <li><a href="">기타(YOUTUBE)</a></li>
-                      </ul>
+                        <ul class="submenu">
+                          <li><a href="">동작</a></li>
+                          <li><a href="">형태</a></li>
+                          <li><a href="">이벤트</a></li>
+                          <li><a href="">제어</a></li>
+                          <li><a href="">기타(YOUTUBE)</a></li>
+                        </ul>                    
                     </li>
                     <li><a href="03-03.html">고양이 움직이기</a></li>
                 </ul>
@@ -174,17 +176,20 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/1.png" alt="" style="width: 70%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/2.png" alt="" style="width:70%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/3.png" alt=""style="width: 30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/4.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/5.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/6.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/7.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/8.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/9.png" alt=""style="width:30%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/10.png" alt="" style="width:70%"> </a>   </div>
-                            <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/03/01/11.png" alt="" style="width:80%"> </a>   </div>
+                            <div class="swiper-slide">  
+                                <a href="javascript:void(0)">
+                                  <h2>스크래치란</h2>
+                                  <img src="assets/03/00/1.png" alt="" style="width: 40%"> 
+                                  <p>
+                                    스크래치(Scratch)는 MIT 미디어 랩에서 8세~16세의 아이들을 대상으로 만든 교육용, 블록형 프로그래밍 언어이다.<br>
+                                    이 사이트에서 활동하는 사람들인 '스크래쳐'(영어: Scratcher)들은 블록을 조립하는 방식으로 프로젝트를 만든다.<br> 
+                                    만들어진 프로젝트는 스크래치 웹사이트에서 누구나 실행하거나 하트나 별, 댓글을 달고 리믹스할 수 있다.<br> 
+                                    필요하다면 HTML5나 안드로이드 앱, EXE 등의 형식으로 내보낼 수도 있다.<br>
+                                  </p>
+                                </a>   
+
+                            </div>
+  
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"> </div>

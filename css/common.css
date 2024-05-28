@@ -18,7 +18,8 @@ li {
     font-size :1rem;
 }
 nav li{
-    font-size : 1.5rem;
+    font-size : 1.3rem;
+ 
 }
 
 .layout{padding-left:50px; padding-right:50px;}
@@ -41,7 +42,7 @@ margin : 0px;
 
 .wrapper>header>nav li{
     text-align:left;
-    width : 200px;
+    width : 15vw;
     font-size : 1.8vw;
 }
 
