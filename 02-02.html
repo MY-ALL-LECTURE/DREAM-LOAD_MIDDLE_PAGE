@@ -28,6 +28,67 @@
              'opsz' 24
            }
            </style>
+      <!-- SWIPER CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <style>
+        .wrapper>main>section.banner-section>.swiper{
+            border : 1px solid;
+            height:100%;
+        }
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper{
+     
+        }
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+           
+        }
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a{
+            width : 100%;
+            height : 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          
+
+        }
+
+
+        .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
+            border : 1px solid;
+            object-fit: contain;
+            width : 40%;
+
+        }
+        .wrapper>main>section.banner-section .swiper-pagination-bullet{
+            width:10px;
+            height:10px;
+            background-color: gray;
+        }
+        .wrapper>main>section.banner-section .swiper-button-next::after,
+        .wrapper>main>section.banner-section .swiper-button-prev::after
+        {
+            content :'';
+        }
+
+        .wrapper>main>section.banner-section .material-symbols-outlined{
+            font-size : 7rem;
+            color : lightgray;
+            opacity: .6;
+        }
+        .wrapper>main>section.banner-section .material-symbols-outlined:hover{
+            opacity: 1;
+        }
+
+        .wrapper>main>section.banner-section .swiper-button-next{}
+        .wrapper>main>section.banner-section .swiper-button-prev{}
+    </style>
 
         <link rel="stylesheet" href="css/common.css">
 
@@ -91,17 +152,77 @@
             <aside>
                 <ul>
                     <li><a href="02-01.html">CODE</a></li>
-                    <li><a href="02-02.html">SERVER</a></li>
-                    <li><a href="02-03.html">NETWORK</a></li>
-                    <li><a href="02-04.html">정리하기</a></li>
-                    
-                    
+                    <li><a href="02-02.html">SERVER/NETWORK</a></li>
                 </ul>
 
             </aside>
-            <section>
+            <style>
+              .swiper-slide{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+              td,th{
+                border : 1px solid;
+                text-align:center;
+              }
+              .swiper-slide::before{
+                content : "!";
+                position:absolute;
+                left:20px;
+                top:5px;
+                display:block;
+              }
+              .swiper-slide:nth-child(1)::before{
+                content : "Server/Network";
+                font-size : 1.2rem;
+              }
+            </style>
+            <section class="banner-section">
+              <!-- Slider main container -->
+              <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">  
+                       
+                        <img src="assets/02/02/1.png" alt="" style="width: 50%"> 
+                        <hr>
+                        <table width="800px" >
+                          <tr>
+                            <th>CLIENT</th>
+                            <th>SERVER</th>
+                            <th>SERVICE</th>
+                            <th>NETWORK</th>
+                          </tr>
+                          <tr>
+                            <td>서비스 '이용' 주체</td>
+                            <td>서비스 '제공' 주체</td>
+                            <td>클라이언트의 욕구를 만족하는 것들</td>
+                            <td>서버와 클라이언트를 연결</td>
+                          </tr>
+                          <tr>
+                            <td>사람</td>
+                            <td>00삼겹살</td>
+                            <td>항정살/가브리살/목살..</td>
+                            <th>홀서빙직원</th>
+                          </tr>
+                          <tr>
+                            <td>웹브라우저</td>
+                            <td>서버컴퓨터(장치)</td>
+                            <td>서비스 프로그램</td>
+                            <th>인터넷</th>
+                          </tr>
+                        </table> 
+                      </div>
+                     
+                  </div>
 
-            </section>
+              
+
+              </div>
+      </section>
         </main>
         <footer class="bg-dark">
 

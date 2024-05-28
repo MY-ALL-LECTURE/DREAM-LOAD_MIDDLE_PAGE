@@ -155,20 +155,46 @@
             <aside>
                 <ul>
                     <li><a href="02-01.html">CODE</a></li>
-                    <li><a href="02-02.html">SERVER</a></li>
-                    <li><a href="02-03.html">NETWORK</a></li>
-                    <li><a href="02-04.html">정리하기</a></li>
+                    <li><a href="02-02.html">SERVER/NETWORK</a></li>
+
                     
                     
                 </ul>
 
             </aside>
             <style>
-              .swiper-slide td,tr{
+              .swiper-slide td,th{
                 border : 1px solid;
                 text-align: center;
                 padding : 5px;
                 font-weight:800;
+              
+              }
+              .swiper-slide{
+                position:relative;
+              }
+              .swiper-slide::before{
+                content : "!";
+                position:absolute;
+                left:20px;
+                top:5px;
+                display:block;
+              }
+              .swiper-slide:nth-child(1)::before{
+                content : "Code";
+                font-size : 2rem;
+              }
+              .swiper-slide:nth-child(2)::before{
+                content : "프로그램";
+                font-size : 2rem;
+              }
+              .swiper-slide:nth-child(3)::before{
+                content : "Coding";
+                font-size : 2rem;
+              }
+              ul{
+                list-style:none;
+                padding :0px;
               }
             </style>
             <section class="banner-section">
@@ -178,18 +204,18 @@
                   <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                        <div>
-                          <h1>Code(부호)</h1>
-                          <p style="font-size:1.7rem;">- 의미를 가진 기호</p>
 
-                          <table width="800px" style="font-size:1.2rem;">
+                        <div>
+                          <p style="font-size:1rem;">- 의미를 가진 기호</p>
+
+                          <table width="600px" style="font-size:1.2rem;">
                             <tr>
-                              <td>자음</td>
-                              <td>모음</td>
-                              <td>자음</td>
-                              <td></td>
-                              <td>단어</td>
-                              <td>의미</td>
+                              <th>자음</th>
+                              <th>모음</th>
+                              <th>자음</th>
+                              <th></th>
+                              <th>단어</th>
+                              <th>의미</th>
                             </tr>
                             <tr>
                               <td>ㄱ</td>
@@ -201,11 +227,11 @@
                             </tr>                            
                           </table>
                           <hr>
-                          <table width="800px" style="font-size:1.2rem;">
+                          <table width="600px" style="font-size:1.2rem;">
                             <tr>
-                              <td colspan="5">CODE</td>
-                              <td>word</td>
-                              <td>Meaning</td>
+                              <th colspan="5">CODE</th>
+                              <th>word</th>
+                              <th>Meaning</th>
                             </tr>  
                             <tr>
                               <td>a</td>
@@ -218,7 +244,7 @@
                             </tr>
                           </table>
                           <hr>
-                          <table width="800px">
+                          <table width="600px">
                             <tr>
                               <td>Code(부호)</td>
                               <td></td>
@@ -234,12 +260,92 @@
                       </div>
                       <div class="swiper-slide"> 
                         <div>
-                          <h1>프로그램</h1>
-                          <p style="font-size:1.7rem;">- 해야할 일들의 순서 묶음</p>
-
+                         
+                          <p style="font-size :   .9rem;">- 해야할 일들의 묶음</p>
+                          <p style="font-size :   .9rem;">- 순서를 가진다</p>
+                          <p style="font-size :   .9rem;">- 목적이 있다</p>
+                          <p style="font-size :   .9rem;">- Code 들의 집합</p>
+                         
+                          <style>
+                            .ex{
+                              display:flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              
+                              text-align: center;
+                            }
+                            .ex>*{
+                              width : 300px;
+                              height : 200px;
+                              border-right : 1px solid;
+                            }
+                            .ex>*:last-child{
+                              border-right : 0px;
+                            }
+                          </style>
+                          
+                          <div class="ex">
+                            <div>
+                              <h3>다이어트</h3>
+                              <ul>
+                                <li>1 아침식단 : 달걀1개,사과반쪽</li>
+                                <li>2 아침운동 : 조깅</li>
+                                <li>3 점심식단 : 채소위주 식단 - </li>
+                                <li>4 점심운동 : 헬스</li>
+                                <li>...</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h3>라면레시피</h3>
+                              <ul>
+                                <li>1 물을 넣는다</li>
+                                <li>2 스프를 넣는다</li>
+                                <li>3 면을 넣는다</li>
+                                <li>4 신나게 저어저어</li>
+                              </ul>
+                            </div>
+                            <div>
+                              <h3>컴퓨터 프로그램</h3>
+                              <div>
+                                  <div>int n = 10; </div> 
+                                  <div>int m = 20;</div> 
+                                  <div>int k = n + m;</div> 
+                              </div>
+                            </div>
+                          </div>
+               
                         </div>
                       </div>
-                      <div class="swiper-slide">  <a href="javascript:void(0)"><img src="assets/02/01/3.png" alt="" style="width: 70%"> </a>   </div>
+                        
+                      <div class="swiper-slide">  
+                        <div>
+                            <div style="font-size : .7rem;font-weight:800;">- 프로그램을 만드는 것</div>
+                            <div style="font-size : .7rem;font-weight:800;  ">- 컴퓨터가 이해하는 코드를 이용해서 컴퓨터가 할일들을 전달하는 것</div>
+
+                            <table width="800px">
+                              <tr>
+                                <th></th>
+                                <th>블록코딩</th>
+                                <th>문자코딩</th>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td><img src="assets/02/01/1.png" style="width : 200px; height : 200px;"></td>
+                                <td><img src="assets/02/01/2.png" style="width : 200px; height : 200px;"></td>
+                              </tr>
+                              <tr>
+                                <th>장점</th>
+                                <td>간편<br>쉬움<br>제작시간짧음<br></td>
+                                <td>빠름<br>복잡한 기능구현 용이<br>응용폭 넓음</td>
+                              </tr>
+                              <tr>
+                                <th>단점</th>
+                                <td>비교적 느림<br>복잡한 기능구현 어려움<br>보조도구가 적음</td>
+                                <td>배워야 할 문법들/ API들이 많음<br>초보자 접근 어려움</td>
+                              </tr>
+                            </table>
+                        </div>
+                      </div>
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"> </div>
@@ -283,6 +389,8 @@
           },
           mousewheel : false,
           effect : 'fade',  //fade
+
+
       });
   </script>
     
