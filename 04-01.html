@@ -28,9 +28,75 @@
              'opsz' 24
            }
            </style>
+      <!-- SWIPER CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+       <link rel="stylesheet" href="css/common.css">
+
+
+
+          <style>
+    
+            .wrapper>main>section.banner-section>.swiper{
+                border : 1px solid;
+                height:100%;
+            }
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper{
+         
+            }
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide{
+                width:100%;
+                height:100%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+               
+            }
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a{
+                width : 100%;
+                height : 100%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+              
+
+            }
+    
+    
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
+                border : 1px solid;
+                object-fit: contain;
+                width : 40%;
+
+            }
+            .wrapper>main>section.banner-section .swiper-pagination-bullet{
+                width:10px;
+                height:10px;
+                background-color: gray;
+            }
+            .wrapper>main>section.banner-section .swiper-button-next::after,
+            .wrapper>main>section.banner-section .swiper-button-prev::after
+            {
+                content :'';
+            }
+    
+            .wrapper>main>section.banner-section .material-symbols-outlined{
+                font-size : 7rem;
+                color : lightgray;
+                opacity: .6;
+            }
+            .wrapper>main>section.banner-section .material-symbols-outlined:hover{
+                opacity: 1;
+            }
+    
+            .wrapper>main>section.banner-section .swiper-button-next{}
+            .wrapper>main>section.banner-section .swiper-button-prev{}
+        </style>
    
-<link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/common.css">
 
 
 
@@ -97,9 +163,59 @@
                 </ul>
 
             </aside>
-            <section>
+            <style>
+              tr,td{
+                border : 1px solid;
+                text-align: center;
+              }
+              .title-01{
+                position: relative;
+                background-color: red;
+              }
+              .title-01::before{
+                content : "임베디드란";
+                position: absolute;
+                left : 15px;
+                top : 10px;
+                display:block;
+                font-size : 2rem;
+               
+              }
+            </style>
+            <section class="banner-section">
+              <!-- Slider main container -->
+              <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide title-01" >  
+                        <div>
+                          <table width="1000px" align="center">
+                            <tr>
+                              <td><img src="assets/04/01/1.jpg"  style="width : 300px;"></td>
+                              <td><img src="assets/04/01/2.jpg" style="width : 300px;"></td>
+                              <td><img src="assets/04/01/3.png" style="width : 300px;"></td>
 
-            </section>
+                            </tr>
+                            <tr>
+                              <td>흔히들 쓰는 선풍기</td>
+                              <td>임베디드 회로가 달린 '전자식' 선풍기의 버튼들</td>
+                              <td>내부 회로 기판</td>
+                            </tr>
+                          </table>
+                          <hr>
+                          <p style="font-size : 1.5rem;">
+                            📘 embedded : 내장형,내장된<br>
+                            어떤 기계 안에 '제어'를 목적으로 하는 아주 작은 컴퓨터가 달려있는경우 그게 바로 임베디드 시스템이라 합니다.<br>
+                            기계의 다른 부분을 위해 일하는 모든 컴퓨터라고 보면 됩니다.
+                          </p>
+                        </div>
+                      </div>
+                   
+                  </div>
+
+              </div>
+      </section>
         </main>
         <footer class="bg-dark">
 

@@ -28,9 +28,75 @@
              'opsz' 24
            }
            </style>
+      <!-- SWIPER CDN -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+       <link rel="stylesheet" href="css/common.css">
+
+
+
+          <style>
+    
+            .wrapper>main>section.banner-section>.swiper{
+                border : 1px solid;
+                height:100%;
+            }
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper{
+         
+            }
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide{
+                width:100%;
+                height:100%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+               
+            }
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a{
+                width : 100%;
+                height : 100%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+              
+
+            }
+    
+    
+            .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
+                border : 1px solid;
+                object-fit: contain;
+                width : 40%;
+
+            }
+            .wrapper>main>section.banner-section .swiper-pagination-bullet{
+                width:10px;
+                height:10px;
+                background-color: gray;
+            }
+            .wrapper>main>section.banner-section .swiper-button-next::after,
+            .wrapper>main>section.banner-section .swiper-button-prev::after
+            {
+                content :'';
+            }
+    
+            .wrapper>main>section.banner-section .material-symbols-outlined{
+                font-size : 7rem;
+                color : lightgray;
+                opacity: .6;
+            }
+            .wrapper>main>section.banner-section .material-symbols-outlined:hover{
+                opacity: 1;
+            }
+    
+            .wrapper>main>section.banner-section .swiper-button-next{}
+            .wrapper>main>section.banner-section .swiper-button-prev{}
+        </style>
    
-<link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/common.css">
 
 
 
@@ -97,9 +163,56 @@
                 </ul>
 
             </aside>
-            <section>
+            <style>
+              tr,td{
+                border : 1px solid;
+                text-align: center;
+              }
+              .title-01{
+                position: relative;
+                background-color: red;
+              }
+              .title-01::before{
+                content : "IOT란";
+                position: absolute;
+                left : 15px;
+                top : 10px;
+                display:block;
+                font-size : 2rem;
+               
+              }
+            </style>
+            <section class="banner-section">
+              <!-- Slider main container -->
+              <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide title-01" >  
+                        <div>
+                          <table  align="center">
+                            <tr>
+                              <td>휴대폰 연동 가능 냉장고</td>
+                            </tr>
+                            <tr>
+                              <td><img src="assets/04/02/1.jpg"  ></td>
+                            </tr>
+ 
+                          </table>
+                          <hr>
+                          <p style="font-size : 1.5rem;text-align:center;">
+                             📘 IOT : Internet Of Things <br>
+                            인터넷 연결이 가능한 기기(Things)<br>
+                            임베디드 시스템등 전자기기들이 통신기능을 갖추고 있는것<br>
+                            (ex. 휴대폰 - 에어컨 , 휴대폰 - 자동차 ..)
+                          </p>
+                        </div>
+                      </div>
+                   
+                  </div>
 
-            </section>
+              </div>
+      </section>
         </main>
         <footer class="bg-dark">
 
