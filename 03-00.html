@@ -208,9 +208,73 @@
             </section>
         </main>
         <footer class="bg-dark">
+          <style>
+            footer{
+              color : white;
+            }
+            .footer-main{
+              height : 150px;
+              border : 1px solid white;
 
-
-        </footer>
+              display:flex;
+              justify-content: start;
+              align-items: center;
+            
+            }
+            .footer-main>*{
+              margin :10px;
+            }
+            .footer-main>div{
+              position:relative;
+            }
+            .footer-main>div::after{
+              content :'';
+              height : 18px;
+              /* border : 1px solid white; */
+              display:block;
+              position:absolute;
+              left:0px;
+              top:-25px;
+              width : 100%;
+              color : lightgray;
+              font-size : .5rem;
+              text-align:center;
+            }
+            .footer-main>div.github::after{
+              content : "GITHUB";
+            }
+            .footer-main>div.instar::after{
+              content : "INSTRAGRAM";
+            }
+            .footer-main>div.facebook::after{
+              content : "FACEBOOK";
+            }
+            .footer-bottom{
+              font-size : .5rem;
+              font-family: "맑은 고딕";
+              text-align: right;
+              padding-right : 10px;
+            }
+          </style>
+          <div class="footer-top">
+            <ul>
+              <li><a href="https://g-sa.koreaisacademy.com/" target="_blank">학원홈페이지</a></li>
+              <li><a href="https://g-sa.koreaisacademy.com/customer/center_online.asp" target="_blank">상담예약</a></li>
+              <li><a href="https://g-sa.koreaisacademy.com/academy/press.asp" target="_blank">언론보도확인</a></li>
+              <li><a href="https://g-sa.koreaisacademy.com/academy/location.asp" target="_blank">오시는길</a></li>
+            </ul>
+          </div>
+          <div class="footer-main layout">
+            
+              <div class="github"><a href=""><img src="assets/githublogo.png" alt="" style="width:50px;height:50px;"></a></div>
+              <div class="instar"><a href=""><img src="assets/instraicon.png" alt="" style="width:50px;height:50px;"></a></div>
+              <div class="facebook"><a href=""><img src="assets/facebookicon.png" alt="" style="width:50px;height:50px;"></a></div>
+            
+          </div>
+          <div class="footer-bottom">
+            copyright ⓒ 2024 JUNG WOO GYUN . ALL RIGHTS RESERVED
+          </div>
+      </footer>
     </div>
 
     
