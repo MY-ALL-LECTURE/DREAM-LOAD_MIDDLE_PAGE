@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DREAMLOAD</title>
-    <link rel="icon" href="/assets/favicon.ico">
 
-
+      <link rel="icon" href="/assets/favicon.ico">
 
        <!-- RESET CDN -->
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
@@ -31,7 +30,70 @@
            }
            </style>
 
-    <link rel="stylesheet" href="css/common.css">
+     <!-- SWIPER CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <style>
+      .wrapper>main>section.banner-section>.swiper{
+          border : 1px solid;
+          height:100%;
+      }
+      .wrapper>main>section.banner-section>.swiper>.swiper-wrapper{
+   
+      }
+      .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide{
+          width:100%;
+          height:100%;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+         
+      }
+      .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a{
+          width : 100%;
+          height : 100%;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+        
+
+      }
+
+
+      .wrapper>main>section.banner-section>.swiper>.swiper-wrapper>.swiper-slide>a>img{
+          border : 1px solid;
+          object-fit: contain;
+          width : 40%;
+
+      }
+      .wrapper>main>section.banner-section .swiper-pagination-bullet{
+          width:10px;
+          height:10px;
+          background-color: gray;
+      }
+      .wrapper>main>section.banner-section .swiper-button-next::after,
+      .wrapper>main>section.banner-section .swiper-button-prev::after
+      {
+          content :'';
+      }
+
+      .wrapper>main>section.banner-section .material-symbols-outlined{
+          font-size : 7rem;
+          color : lightgray;
+          opacity: .6;
+      }
+      .wrapper>main>section.banner-section .material-symbols-outlined:hover{
+          opacity: 1;
+      }
+
+      .wrapper>main>section.banner-section .swiper-button-next{}
+      .wrapper>main>section.banner-section .swiper-button-prev{}
+  </style>      
+
+           <link rel="stylesheet" href="css/common.css">
+
 
 </head>
 <body>
@@ -43,10 +105,11 @@
                     <img src="assets/logo.png">
                 </a>
                 <img src="assets/header-right.png" alt="">
-
+   
             </div>
             <nav class="navbar navbar-expand-lg navbar-light  bg-dark layout-half">
                 <div class="container-fluid ">
+                  
                   <div class="collapse navbar-collapse " id="navbarSupportedContent" >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       
@@ -71,7 +134,8 @@
                       </li>
                       <li class="nav-item me-5">
                         <a class="nav-link text-light -100" href="06-01.html"><span class="material-symbols-outlined">help</span> Q&A</a>
-                      </li>
+                      </li>               
+
                     </ul>
                   </div>
                 </div>
@@ -81,24 +145,64 @@
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">학원소개</a></li>
-              <li class="breadcrumb-item active" aria-current="page">강사소개</li>
+              <li class="breadcrumb-item active" aria-current="page">QnA</li>
             </ol>
           </nav>
         </div>
         <main class="layout">
           
             <aside>
-                <ul>
-                    <li><a href="01-01.html">학원소개</a></li>
-                    <li><a href="01-02.html">강사소개</a></li>
-                    <li><a href="01-03.html">안전 및 유의사항</a></li>
-                </ul>
+              <ul>
+                <li><a href="06-01.html">QnA</a></li>
+                <li><a href="06-02.html">THE END</a></li>
+            
+            </ul>
 
             </aside>
-            <section>
-                <iframe src="https://g-sa.koreaisacademy.com/community/teacher_view.asp?txtContentSeq=393&txtCurPage=1" width="100%" height="100%" frameborder="0"></iframe>
-            </section>
+            <section class="banner-section">
+              <!-- Slider main container -->
+              <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <style>
+                        .swiper-wrapper .swiper-slide a::before{
+                         
+                          font-size : 1rem;
+                          font-weight:900;
+                          display:block;
+                          
+                          position:absolute;
+                          left:0px;
+                          top:0px;
+                          padding-left : 20px;
+                          text-decoration: none;
+                        }
+                        .swiper-wrapper .swiper-slide a.arduino::before{
+                          content : "Arduino 회로도"
+                        }
+
+                        .swiper-wrapper .mblock_01::before{
+                          content:"[예제 1] LED 켜기 ";
+                        }     
+                        .swiper-wrapper .mblock_02::before{
+                          content:"[예제 2] LED 켜기 ";
+                        }
+                        .swiper-wrapper .mblock_03::before{
+                          content:"[예제 3] LED 켜기 ";
+                        }                        
+                      </style>
+              
+                      <div class="swiper-slide">  
+                       
+                          <img src="assets/06/1.jpg" alt="" style="width: 50%;border : 0px;"> 
+                      
+                      </div>
+                      
+                  </div>
+               
+              </div>
+      </section>
         </main>
         <footer class="bg-dark">
           <style>
@@ -107,7 +211,7 @@
             }
             .footer-main{
               height : 150px;
- 
+
               display:flex;
               justify-content: start;
               align-items: center;
@@ -169,6 +273,28 @@
       </footer>
     </div>
 
-    
+      <script>
+        const swiper_banner=new Swiper('.wrapper>main>section.banner-section>.swiper',{
+        
+          direction : 'horizontal',
+            autoplay : {
+                delay:10000,
+                pauseOnMouseEnter : true,
+            },
+            loop :true,
+            pagination : {
+                el : '.swiper-pagination',
+                clickable :'true',
+                type:'bullets', // bullets,progressbar,fraction..
+            },
+            navigation : {
+                nextEl : '.swiper-button-next',
+                prevEl : '.swiper-button-prev',
+            },
+            mousewheel : false,
+            effect : 'fade',  //fade
+        });
+
+    </script>   
 </body>
 </html>
